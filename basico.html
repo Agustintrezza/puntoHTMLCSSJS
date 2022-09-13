@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test Agustin Trezza</title>
+  <meta charset="UTF-8">
+
+  <!-- HOJAS DE ESTILOS PROPIA Y DE OBELISCO -->
+  <link rel="stylesheet" href="./css/basicoStyles.css">
+  <link rel="stylesheet" href="./css/obelisco.css">
+
+  <!-- ICONOS FONTAWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+   <!-- BOOTSTRAP 4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+  <!-- FUENTES -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet"></link>
+
+</head>
+
+
+<body>
+
+
+    <!-- BANNER CORONAVIRUS -->
+
+      <div class="contenedor-coronavirus">
+          <div class="container-general">
+            <h2 class="texto-coronavirus"><a class="enlace-coronavirus">Coronavirus (Covid-19):</a> cliqueá para leer toda la información</h2>
+          </div>
+      </div>
+
+
+  
+    <!-- HEADER / NAVBAR -->
+
+    <div class="contenedor-header">
+        <div class="container-general-header p-3">
+            <div>
+              <img class="logo-escudo-header" src="./img/logo-gcba4.jpeg" alt="logo-gcba4"/>
+              <img class="logo-ba-header" src="./img/logo-gcba5.png" alt="logo-gcba5"/>
+            </div>
+            <div>
+                <h4 class="titulo-tecnico-header">HTML CSS JS (GCBA) - AGUSTIN TREZZA</h4>
+            </div>
+        </div>
+    </div>
+
+
+  <div class="container-grid">  <!-- acá abre el contenedor de  2 componentes (formulario y progressbar) -->
+
+    <!-- FORMULARIO -->
+    
+    <div class="">
+      <h1 class="titulo-formulario">¡Obtené toda la información!</h1>
+      <h1 class="subtitulo-formulario">Realizá tu consulta</h1>
+      <form class="">
+          <div class="form-group">
+            <label class="form-label label">Nombre</label>
+            <input
+              type="search"
+              class="form-control input-search"
+              id="name-input"
+              name="name"
+              placeholder="Nombre"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label label">Apellido</label>
+            <input
+              type="search"
+              class="form-control input-search"
+              id="name-input"
+              name="name"
+              placeholder="Apellido"
+            />
+          </div>
+
+          <button class="btn boton-accion mt-3 d-flex align-items-end w-100 boton-form">Buscar</button>
+      </form>
+    </div>
+
+
+    <!-- BARRA DE PROGRESO COMPONENT -->
+
+        <div class="container progressbar-container alineacion-progressbar">
+            <h2 class="titulo-progressbar">¡Confirmá tu cuenta!</h2>
+            <p class="texto-progressbar">Validá tu cuenta haciendo click. Ingresá tu búsqueda y obtené toda la información que necesitas.</p>
+
+
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="barra" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%;">
+                    50%
+                </div>
+            </div>
+
+            <div class="" id="exito"></div>
+
+          <button class="btn boton-progressbarr" id="boton" onclick="data()">Verificar</button>
+        </div>
+
+  </div>  <!-- acá cierra el contenedor de  2 componentes (formulario y barra de progreso) -->
+
+
+    <!-- TABLA -->
+
+
+    <div class="container-general-tabla">
+    <table class="table table-hover my-0">
+      <thead>
+        <tr class="header-tabla">
+          <th  scope="col"></th>
+          <th class="thead" scope="col">Nombre</th>
+          <th class="thead" scope="col">Apellido</th>
+          <th class="thead" scope="col">Edad</th>
+          <th class="thead" scope="col">Comuna</th>
+          <th class="thead" scope="col">Acceso</th>
+          <th class="thead" scope="col">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Agustin</td>
+          <td>Trezza</td>
+          <td>34</td>
+          <td>(59) Belgrano</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Paula</td>
+          <td>Iniesta</td>
+          <td>33</td>
+          <td>(21) Versalles</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Fernando</td>
+          <td>Martinez</td>
+          <td>51</td>
+          <td>(10) Monstserrat</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Florencia</td>
+          <td>Ruiz</td>
+          <td>26</td>
+          <td>(3) Devoto</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Claudio</td>
+          <td>Yfran</td>
+          <td>43</td>
+          <td>(32) Tribunales</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>Francisco</td>
+          <td>Soto</td>
+          <td>31</td>
+          <td>(17) Palermo</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>Daina</td>
+          <td>Lires</td>
+          <td>67</td>
+          <td>(45) Nuñez</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>Emiliano</td>
+          <td>Merad</td>
+          <td>48</td>
+          <td>(17) Palermo</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">10</th>
+          <td>Lucia</td>
+          <td>Santoro</td>
+          <td>65</td>
+          <td>(39) Villa Martelli</td>
+          <td><a class="enlace-tabla" href="#">Ver registro...</a></td>
+          <td><i class="fa-solid fa-pen-to-square botones-edit-tabla"></i><i class="fa-sharp fa-solid fa-trash botones-tabla-delete"></i><i class="fa-sharp fa-solid fa-download botones-tabla-download"></i></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr class="separacion-hr">
+    </div>
+
+
+
+
+    <!-- CONTENIDO -->
+
+      <div class="separacion-componente-preguntas-frecuentes">
+        <div class="contenedor-contenido">
+          <h1 class="titulo-preguntas-frecuentes">Preguntas Frecuentes</h1>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Qué es una cuenta miBA ?</h2>
+          <p class="informacion-preguntas-frecuentes">Es tu cuenta única para interactuar digitalmente con diferente servicios del Gobierno de la
+            ciudad.</p>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Quién puede utilizarla? </h2>
+          <p class="informacion-preguntas-frecuentes">Si sos mayor de 16 años y vivís en la Ciudad de Buenos Aires esta aplicación es ideal para
+            vos. La aplicación también es útil para cualquier persona fuera de Capital Federal e incluso
+            para Turistas.</p>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Cuanto Cuesta? </h2>
+          <p class="informacion-preguntas-frecuentes">¡Nada! la cuenta miBA es un servicio que el Gobierno de la Ciudad de Buenos Aires ofrece de
+            forma gratuita.</p>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Cómo obtengo una cuenta miBA?</h2>
+          <p class="informacion-preguntas-frecuentes">Desde la web podes entrar en https://miba.buenosaires.gob.ar/id/login?next=/ , y registrarte</p>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Cómo me registro para crear una cuenta?</h2>
+          <p class="informacion-preguntas-frecuentes">Podés registrarte con tu usuario de Facebook o Gmail para acceder de forma simple o bien
+            podés registrarte con tu correo electrónico y contraseña.
+            Una vez creada tu cuenta, te enviaremos un correo electrónico para confirmar el registro.
+            Revisá tu casilla de correo electrónico y confirmá tu dirección.
+            Completá con tus datos personales y listo.</p>
+
+          <h2 class="subtitulo-preguntas-frecuentes">¿Qué puedo hacer con una cuenta miBA?</h2>
+          <p class="informacion-preguntas-frecuentes">Con tu cuenta miBA podés mediante los portales respectivos acceder a servicios de la Ciudad
+            tales como:
+            ● Aplicación miBA plataforma ***** REVISAR******.
+            ● Consultar y sacar turnos de salud
+            ● Solicitá trámites y seguí el estado de tus solicitudes..
+            ● Realiza denuncias.
+            ● IVC.
+            ● Buscar ofertas laborales.
+            ● Pide un taxi
+            ● Conectate a la red Wifi de la ciudad
+            ● y cada dia incorporamos mas y mas servicios.</p>
+
+            <h2 class="subtitulo-preguntas-frecuentes">¿Necesito otras aplicaciones para utilizar miBA?</h2>
+            <p class="informacion-preguntas-frecuentes">Si, tu cuenta es solo el portal de entrada a un mundo de servicios prestados por diferentes
+            entes de la ciudad</p>
+
+            <h2 class="subtitulo-preguntas-frecuentes">¿Cómo actualizo los datos de mi perfil?</h2>
+            <p class="informacion-preguntas-frecuentes">Si, tu cuenta es solo el portal de entrada a un mundo de servicios prestados por diferentes
+            entes de la ciudad</p>
+          
+            <h2 class="subtitulo-preguntas-frecuentes">¿Puedo eliminar mi cuenta?</h2>
+            <p class="informacion-preguntas-frecuentes">Si, en la sección de perfil, encontrarás un botón que permite borrar tu cuenta, esto eliminará los
+            datos ingresados con los formularios “datos básicos” y “datos opcionales” de nuestro sistema.
+            Más adelante podrás volver a crear una nueva cuenta si la necesitas.</p>
+        </div>
+        <hr class="separacion-hr">
+      </div>
+
+    
+
+  <!-- NOTIFICACIONES -->
+
+      <div class="separacion-componente">
+        <div class="container-general">
+          <div class="d-flex flex-column my-5">
+
+            <div>
+                <h1 class="titulo-notificaciones">Tus notificaciones <strong class="notificacion"> (1)</strong></stron></h1>
+            </div>
+            <div>
+                <h2 class="usuario">agustin.trezza@gmail.com</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-general grid-notificaciones">
+          <div class="d-flex contenedor-tarjeta-notificacion">
+              <div class="contenedor-imagen-notificacion">
+                <img class="imagen-notificacion-uno" src="./img/logo-gcba2.jpeg">
+              </div>
+              <div class="ml-2">
+                <h5 class="titulo-notificacion">Clima</h5>
+                <p class="texto-notificacion">Parcial mente nublado, mejorando <br>
+                  a la tarde.</p>
+              </div>
+          </div>
+          <div class="d-flex contenedor-tarjeta-notificacion">
+            <div class="contenedor-imagen-notificacion">
+              <img class="imagen-notificacion-uno" src="./img/logo-gcba.jpeg">
+            </div>
+            <div class="ml-2">
+              <h5 class="titulo-notificacion">Usos Útiles</h5>
+              <p class="texto-notificacion">Circulá con precaución. Si vas a andar <br>
+                en bicicleta usá casco.</p>
+            </div>
+          </div>
+
+          <div class="d-flex contenedor-tarjeta-notificacion">
+              <div class="contenedor-imagen-notificacion">
+                  <img class="imagen-notificacion-tres" src="./img/logo-gcba3.webp">
+              </div>
+              <div class="ml-2">
+                <h5 class="titulo-notificacion">Tenes una deuda</h5>
+                <p class="texto-notificacion">Paga el ABL, comunicate al ........</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+          <div class="container-general primer-bloque">
+              <div class="d-flex aling align-items-start">
+                <img class="logo-footer" src="./img/logo-gcba7.png" alt="logo-escudo-footer"/>
+              </div>
+
+              <div class="contactos">
+                <div class="text-center d-flex align-items-center telefonos-footer">
+                  <h1 class="titulo-contacto-footer">Teléfonos Útiles</h1>
+                  <h3 class="subtitulo-contacto-footer">Ver Todos los teléfonos</h3>
+                </div>
+                <div class="d-flex justify-content-between contactos">
+                  <h2 class="titulo-footer">108</h2>
+                  <h2 class="titulo-footer">102</h2>
+                  <h2 class="titulo-footer">103</h2>
+                  <h2 class="titulo-footer">107</h2>
+                  <h2 class="titulo-footer">911</h2>
+                </div> 
+              </div>
+              <div class="">
+                <div class="contenedor-titulo-contacto-footer">
+                  <h1 class="titulo-contacto-footer mb-4 d-flex justify-content-end">¡Redes de la Ciudad!</h1>
+                </div>
+                <i class="fa-brands fa-instagram logos"></i>
+                <i class="fa-brands fa-facebook-f logos"></i>
+                <i class="fa-brands fa-twitter logos"></i>
+                <i class="fa-brands fa-youtube logos"></i>
+                <i class="fa-solid fa-wifi logos"></i>
+              </div>
+          </div>
+
+          <div class="container-general grid-footer">
+
+              <div class="py-4 licencia-footer">
+                <img class="logo-escudo-footer" src="./img/logo-gcba8.png" alt="logo-escudo-footer"/>
+                <p class="py-2 texto-footer">Los contenidos de buenosaires.gob.ar están licenciados bajo Creative Commons Reconocimiento 2.5 Argentina License.</p>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center contenedor-enlace-footer">
+                <h3 class="enlaces-footer">Boletín Oficial</h3>
+                <h3 class="enlaces-footer">Terminos y Condiciones</h3>
+                <h3 class="enlaces-footer">Políticas de Privacidad</h3>
+                <h3 class="enlaces-footer">Oficios Judiciales</h3>
+              </div>
+
+          </div>
+      </div>
+
+
+
+      <!--BOTÓN FLOTANTE-->
+
+      <div class="contenedor-boton-flotante d-flex justify-content-between align align-items-center"·>
+          <div class="boton-flotante-texto d-flex align align-items-center justify-content-center">
+            <h5 class="texto-boton">¿Cómo podemos ayudarte?</h5>
+          </div>
+          <div class="contenedor-boton-texto">
+            <img class="boton-flotante" src="./img/logo-gcba9.png"/>
+          </div>
+        
+      </div>
+      
+
+
+      <script src="./js/logica.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "html-css-js-gcba-agustin-trezza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basico.js",
+  "scripts": {
+    "start": "basico.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gcba/obelisco": "^1.39.0"
+  }
+}
